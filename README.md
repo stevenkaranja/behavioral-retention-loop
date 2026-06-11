@@ -6,7 +6,7 @@
 
 ## The Problem
 
-A B2B SaaS company was experiencing high churn among premium users who signed up but failed to discover key product features within the first 14 days. Manual customer success outreach was reactive — by the time a CSM followed up, users had already disengaged. The problem was structural: no automated system existed to detect early disengagement signals and respond before churn became inevitable.
+A B2B SaaS company was experiencing high churn among premium users who signed up but failed to discover key product features within the first 14 days. Manual customer success outreach was reactive by the time a CSM followed up, users had already disengaged. The problem was structural: no automated system existed to detect early disengagement signals and respond before churn became inevitable.
 
 ---
 
