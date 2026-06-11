@@ -73,3 +73,14 @@ const worker = new Worker(
 worker.on('failed', (job, err) => logger.error('Churn score job failed', { jobId: job.id, err }));
 
 module.exports = { computeChurnScore };
+
+// Cache computed scores for 5 min to reduce DB load
+async function getCachedScore(userId) {
+  const cached = await redis.get(`churn:${userId}`);
+  if (cached) return cached;
+  const score = await computeChurnScore(userId);
+  if (score) await redis.set(`churn:${userId}`, score, 300);
+  return score;
+}
+
+module.exports.getCachedScore = getCachedScore;
