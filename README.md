@@ -11,3 +11,12 @@ personalised tutorials for users at churn risk.
 
 ## Stack
 Node.js · PostgreSQL · Redis · GPT-4o
+
+## Production Results (Dec 2024)
+
+| Metric                 | Baseline | After 6 Months |
+|-----------------------|----------|----------------|
+| Monthly churn rate    | 8.2%     | **5.7%** (↓30%)|
+| Feature discovery D14 | 34%      | **71%**        |
+| LTV (avg)             | $1,240   | **$1,513** (+22%)|
+| Retained value        | —        | **$1.8M**      |
